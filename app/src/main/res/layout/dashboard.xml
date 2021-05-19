@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="MENU"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"/>
+
+    <LinearLayout
+        android:id="@+id/layoutStudents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/nStudents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/colorWhite"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:id="@+id/textStudents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" aluno(s)"
+            android:textColor="@color/colorWhite"
+            android:textSize="35dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutModalities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/nModalities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/colorWhite"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:id="@+id/textModalities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" modalidades"
+            android:textColor="@color/colorWhite"
+            android:textSize="35dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutPayments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/textMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" R$"
+            android:textColor="@color/colorWhite"
+            android:textSize="35dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/nPayments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/colorWhite"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:id="@+id/textPayments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" a receber"
+            android:textColor="@color/colorWhite"
+            android:textSize="35dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
