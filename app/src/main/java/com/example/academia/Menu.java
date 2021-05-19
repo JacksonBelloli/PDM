@@ -21,9 +21,9 @@ public class Menu extends AppCompatActivity {
     private void getContext() {
         this.btnDashboard = findViewById(R.id.btnDashboard);
         this.btnStudents = findViewById(R.id.btnStudents);
-        //this.btnMatriculation = findViewById(R.id.btnMatriculation);
-        //this.btnGraduation = findViewById(R.id.btnGraduation);
-        //this.btnPlans = findViewById(R.id.btnPlans);
+        this.btnMatriculation = findViewById(R.id.btnMatriculation);
+        this.btnGraduation = findViewById(R.id.btnGraduation);
+        this.btnPlans = findViewById(R.id.btnPlans);
         this.btnModality = findViewById(R.id.btnModality);
     }
 
@@ -49,7 +49,7 @@ public class Menu extends AppCompatActivity {
                 startActivity(it);
             }
         });
-        /*
+
         btnMatriculation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -73,7 +73,7 @@ public class Menu extends AppCompatActivity {
                 it.putExtra("name", "plan");
                 startActivity(it);
             }
-        });*/
+        });
         btnModality.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
