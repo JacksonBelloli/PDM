@@ -22,6 +22,8 @@ import com.example.academia.model.Student;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -109,14 +111,22 @@ public class ListingView extends AppCompatActivity {
         btnMenu.setText("Voltar");
     }
 
-    private void refreshGraduationElements() {
+    private void refreshGraduationElements()  {
         System.out.println("Refresh Graduation");
         this.name.setText("Graduacao:");
         GraduationDAO sdao = new GraduationDAO();
-        List<Graduation> graduations = sdao.selectByIdModality(idModality);
+        try{
+            List<Graduation> graduations = sdao.selectAll();
 
-        for(Graduation graduation : graduations) {
-            addToList(graduation.getId(), graduation.getMain());
+            System.out.println(graduations);
+
+            for(Graduation graduation : graduations) {
+                addToList(graduation.getId(), graduation.getMain());
+            }
+        }catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
         btnMenu.setText("Voltar");
     }
